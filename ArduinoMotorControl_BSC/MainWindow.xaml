@@ -1,0 +1,32 @@
+﻿<Window x:Class="ArduinoMotorControl_BSC.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ArduinoMotorControl_BSC"
+        mc:Ignorable="d"
+        Title="Arduino Motion Control" Height="416.02" Width="695.026">
+    <Border Background="{DynamicResource Background_gray}">
+        <StackPanel Margin="10">
+            <DockPanel VerticalAlignment="Top" Margin="0,5,0,0" >
+                <Label Content="Port Name" Margin="5,0"/>
+                <ComboBox x:Name="Cmb_portName" Width="100" Margin="5,0" SelectedIndex="0">
+                    <ComboBoxItem Content="COM8"/>
+                </ComboBox>
+                <Label Content="Baudrate" Margin="5,0"/>
+                <ComboBox x:Name="Cmb_baudrate" Width="100" Margin="5,0" SelectedIndex="0">
+                    <ComboBoxItem Content="115200"/>
+                </ComboBox>
+                <Button x:Name="Btn_connect" Content="Connect" Click="Btn_connect_click" Width="100" Margin="5,0" >
+                </Button>
+                <Label x:Name="lbl_status" Content="Not connected" Margin="5,0"/>
+            </DockPanel>
+            <DockPanel Margin="0,5,0,0" >
+                <TextBox x:Name="TB_angle" Width="200" Margin="5"/>
+                <Button x:Name="Btn_rotate" Content="Rotate" Width="100"  Click="Btn_rotate_Click" Margin="5"/>
+                <ToggleButton Content="TurnOn Pin13" Width="100" Margin="5" Checked="ToggleButton_Checked" Unchecked="ToggleButton_Unchecked"/>
+            </DockPanel>
+        </StackPanel>
+
+    </Border>
+</Window>

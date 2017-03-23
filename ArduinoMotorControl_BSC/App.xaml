@@ -1,0 +1,9 @@
+﻿<Application x:Class="ArduinoMotorControl_BSC.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:ArduinoMotorControl_BSC"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <ResourceDictionary Source="/Style/BSC_flat.xaml"/>
+    </Application.Resources>
+</Application>
