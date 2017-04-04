@@ -89,7 +89,6 @@ void _runAngle(int directionPin, int stepPin, double angle){
       digitalWrite(stepPin, LOW);
       delayMicroseconds(stepInterval);
     }
-  
 }
 
 // Blinking led variables 
